@@ -3,7 +3,7 @@ const assertEqual = function(actual, expected) {
     console.log(`🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`);
   } else {
     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
- }
+  }
 };
 
 const firstNames = [
@@ -25,7 +25,7 @@ const countOnly = function(str) {
 
   for (const letters of str) {
 
-    if (letters !== " "){
+    if (letters !== " ") {
       if (results[letters]) {
         results[letters] += 1;
       } else {
@@ -34,14 +34,14 @@ const countOnly = function(str) {
     
     }
   }
-  console.log(results)  
+  console.log(results);
   return results;
-}
+};
 
 const result1 = countOnly(firstNames[0]);
 
 assertEqual(result1["l"], 2);
 assertEqual(result1["i"], 1);
 assertEqual(result1["g"], 1);
-assertEqual(result1["a"], 1 );
+assertEqual(result1["a"], 1);
 //lighthouse labs
