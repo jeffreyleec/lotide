@@ -12,6 +12,11 @@ const eqObjects = function(object1, object2) {
 
   const keys1 = Object.keys(object1).sort();
   const keys2 = Object.keys(object2).sort();
+
+  //console.log(keys1)
+  //console.log(keys2)
+
+
   //console.log("\nstart")
   //console.log(keys1, keys2)
 

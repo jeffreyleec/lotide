@@ -31,22 +31,17 @@ const eqObjects = function(object1, object2) {
   if (!eqArrays(keys1, keys2)) {
     return false;
   }
-
   for (const key of keys1) {
     const value1 = object1[key];
     const value2 = object2[key];
-
-    //console.log(value1, value2)
-
-
-    if (Array.isArray(value1)) {
-      if (!eqArrays(value1, value2)) {
+    
+    if (Array.isArray(value1)) {   //is it an arry 
+      if (!eqArrays(value1, value2)) { // are the values the same 
         //console.log("eq arry failed!!!!")
         return false;
       }
       continue;
     }
-
 
     if (value1 !== value2) {
     //console.log("value check fail")
