@@ -13,4 +13,6 @@ let pigLatin = function(input) {
   return raw;
 };
 
-console.log(pigLatin(args));
+//console.log(pigLatin(args));
+
+module.exports = pigLatin

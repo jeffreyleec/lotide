@@ -8,8 +8,7 @@ const eqArrays = function(actual, expected) {
     }
   }
 
-   //return `🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`;
-   //return console.log(`🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`)
+  
    return true
 
  

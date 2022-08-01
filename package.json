@@ -1,8 +1,8 @@
 {
-  "name": "lotide",
+  "name": "@jeffreyleec/lotide",
   "version": "1.0.0",
-  "description": "",
-  "main": "assertArraysEqual.js",
+  "description": "student of Lighthouse Labs (Jeffrey Lee)'s first json package. Includes useful functions. Please see readme file for more info",
+  "main": "README.md",
   "directories": {
     "test": "test"
   },
@@ -19,7 +19,7 @@
     "type": "git",
     "url": "git+https://github.com/jeffreyleec/lotide.git"
   },
-  "author": "",
+  "author": "Jeffrey Cheuk Hin Lee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeffreyleec/lotide/issues"
