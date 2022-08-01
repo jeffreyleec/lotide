@@ -7,7 +7,8 @@
     "test": "test"
   },
   "dependencies": {
-    "chai": "^4.3.6"
+    "chai": "^4.3.6",
+    "lotide": "^1.0.1"
   },
   "devDependencies": {
     "mocha": "^9.2.2"
@@ -19,7 +20,7 @@
     "type": "git",
     "url": "git+https://github.com/jeffreyleec/lotide.git"
   },
-  "author": "Jeffrey Cheuk Hin Lee",
+  "author": "jeffreyleec, Jeffrey Cheuk Hin Lee",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/jeffreyleec/lotide/issues"
