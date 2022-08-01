@@ -1,59 +1,40 @@
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
-    return `🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`;
-
+    console.log(`🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`);
+    //return `🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`
   } else {
-    return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`;
-  }
-
-};
-
-const eqArrays = function(actual, expected) {
-  if (actual.length !== expected.length) {
-    return false;
-  }
-  for (let i = 0; i < actual.length; i++) {
-    if (actual[i] !== expected[i]) {
-      return false;
-    }
-  }
-  return true;
-
+    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+    //return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`
+    
+ }
 };
 
 const eqObjects = function(object1, object2) {
-
-  const keys1 = Object.keys(object1).sort();
-  const keys2 = Object.keys(object2).sort();
-  //console.log("\nstart")
-  //console.log(keys1, keys2)
-
-  if (!eqArrays(keys1, keys2)) {
-    return false;
+  let objectOneKeys = Object.keys(object1).sort()
+  let objectOneLength = Object.keys(object1).length
+  let objectTwoKeys = Object.keys(object2).sort()
+  let objectTwoLength = Object.keys(object2).length
+  
+  if (objectOneLength !== objectTwoLength) { //same length
+    return false
   }
-  for (const key of keys1) {
-    const value1 = object1[key];
-    const value2 = object2[key];
-    
-    if (Array.isArray(value1)) {   //is it an arry 
-      if (!eqArrays(value1, value2)) { // are the values the same 
-        //console.log("eq arry failed!!!!")
-        return false;
-      }
-      continue;
+  
+  for (let i = 0; i < objectOneKeys.length; i++) {
+    if (objectOneKeys[i] !== objectTwoKeys[i]) {
+      return false
     }
-
-    if (value1 !== value2) {
-    //console.log("value check fail")
-      return false;
-    }
-
-    
   }
-  return true;
-};
-
-
+  
+  
+  for(let keysOne of objectOneKeys){
+   if(object1[keysOne] !== object2[keysOne]) { // since same keys, check obj 1 and obj 2 
+    return false
+   }  
+  }
+  
+  
+  return true
+  };
 
 
 
