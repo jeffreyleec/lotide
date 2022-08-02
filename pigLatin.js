@@ -1,4 +1,5 @@
-const args = process.argv;
+//const args = process.argv;
+// args was input from terminal
 
 let pigLatin = function(input) {
   let raw = "";
@@ -15,4 +16,4 @@ let pigLatin = function(input) {
 
 //console.log(pigLatin(args));
 
-module.exports = pigLatin
+module.exports = pigLatin;

@@ -1,40 +1,39 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`);
-    //return `🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-    //return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`
+// const assertEqual = function(actual, expected) {
+//   if (actual === expected) {
+//     console.log(`🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`);
+//     //return `🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`
+//   } else {
+//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+//     //return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`
     
- }
-};
-
+//   }
+// };
 const eqObjects = function(object1, object2) {
-  let objectOneKeys = Object.keys(object1).sort()
-  let objectOneLength = Object.keys(object1).length
-  let objectTwoKeys = Object.keys(object2).sort()
-  let objectTwoLength = Object.keys(object2).length
+  let objectOneKeys = Object.keys(object1).sort();
+  let objectOneLength = Object.keys(object1).length;
+  let objectTwoKeys = Object.keys(object2).sort();
+  let objectTwoLength = Object.keys(object2).length;
   
   if (objectOneLength !== objectTwoLength) { //same length
-    return false
+    return false;
   }
   
   for (let i = 0; i < objectOneKeys.length; i++) {
     if (objectOneKeys[i] !== objectTwoKeys[i]) {
-      return false
+      return false;
     }
   }
   
   
-  for(let keysOne of objectOneKeys){
-   if(object1[keysOne] !== object2[keysOne]) { // since same keys, check obj 1 and obj 2 
-    return false
-   }  
+  for (let keysOne of objectOneKeys) {
+    if (object1[keysOne] !== object2[keysOne]) { // since same keys, check obj 1 and obj 2
+      return false;
+    }
   }
   
   
-  return true
-  };
+  return true;
+};
 
 
 
@@ -53,4 +52,4 @@ const eqObjects = function(object1, object2) {
 // console.log(assertEqual(eqObjects(cd, dc), true));
 // console.log(assertEqual(eqObjects(cd, cd2), false));
 
-module.exports = eqObjects
+module.exports = eqObjects;

@@ -36,6 +36,6 @@ describe("#middle", () => {
 
 });
 
-// strict equal - string? 
-//deep equal - array 
+// strict equal - string?
+//deep equal - array
 //

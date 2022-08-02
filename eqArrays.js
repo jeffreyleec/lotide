@@ -4,12 +4,12 @@ const eqArrays = function(actual, expected) {
     if (actual[i] !== expected[i]) {
       //return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`;
       //return console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-      return false
+      return false;
     }
   }
 
   
-   return true
+  return true;
 
  
 };

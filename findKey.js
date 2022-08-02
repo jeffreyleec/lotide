@@ -1,11 +1,11 @@
 const findKey = function(object,callback) {
  
   for (const key in object) {
-    if(callback(object[key]) ){
-      return key
+    if (callback(object[key])) {
+      return key;
     }
   }
-  return undefined
+  return undefined;
 
 };
 
@@ -30,4 +30,4 @@ const findKey = function(object,callback) {
 //   "Akelarre":  { stars: 3 }
 // }, x => x.stars === 3), "Akaleri")
 
-module.exports = findKey
+module.exports = findKey;

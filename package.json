@@ -1,6 +1,6 @@
 {
   "name": "@jeffreyleec/lotide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "student of Lighthouse Labs (Jeffrey Lee)'s first json package. Includes useful functions. Please see readme file for more info",
   "main": "README.md",
   "directories": {

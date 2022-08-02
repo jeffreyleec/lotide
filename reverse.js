@@ -1,4 +1,5 @@
-const args = process.argv;
+//const args = process.argv;
+// args was input from terminal
 
 let reverse = function(input) {
   let raw = "";
@@ -20,4 +21,4 @@ let reverse = function(input) {
 //console.log(reverse(args));
 
 
-module.exports = reverse
+module.exports = reverse;

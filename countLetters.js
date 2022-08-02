@@ -1,5 +1,3 @@
-const assertEqual = require('./assertEqual');
-
 const countOnly = function(str) {
   const results = {};
 

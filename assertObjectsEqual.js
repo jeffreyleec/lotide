@@ -1,19 +1,8 @@
-const assertEqual = function(actual, expected) {
-  if (actual === expected) {
-    console.log(`🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`);
-    //return `🟢🟢🟢  Assertion Passed: ${actual} === ${expected}`
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-    //return `🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`
-    
- }
-};
-
 const eqObjects = function(object1, object2) {
-  let objectOneKeys = Object.keys(object1).sort()
-  let objectOneLength = Object.keys(object1).length
-  let objectTwoKeys = Object.keys(object2).sort()
-  let objectTwoLength = Object.keys(object2).length
+  let objectOneKeys = Object.keys(object1).sort();
+  let objectOneLength = Object.keys(object1).length;
+  let objectTwoKeys = Object.keys(object2).sort();
+  let objectTwoLength = Object.keys(object2).length;
   
 
 
@@ -21,35 +10,35 @@ const eqObjects = function(object1, object2) {
 
 
   if (objectOneLength !== objectTwoLength) { //same length
-    return false
+    return false;
   }
   
-  for (let i = 0; i < objectOneKeys.length; i++) {  // check same keys 
+  for (let i = 0; i < objectOneKeys.length; i++) {  // check same keys
     if (objectOneKeys[i] !== objectTwoKeys[i]) {
-      return false
+      return false;
     }
   }
   
   
-  for(let keysOne of objectOneKeys){ // check same key values 
-   if(object1[keysOne] !== object2[keysOne]) { // since same keys, check obj 1 and obj 2 
-    return false
-   }
+  for (let keysOne of objectOneKeys) { // check same key values
+    if (object1[keysOne] !== object2[keysOne]) { // since same keys, check obj 1 and obj 2
+      return false;
+    }
   
     
-   }
+  }
 
 
   
-  return true
-  };
+  return true;
+};
 
 const assertObjectsEqual = function(object1, object2) {
   const inspect = require('util').inspect;
-  if(eqObjects(object1, object2)) {
+  if (eqObjects(object1, object2)) {
     console.log(`Assertion Passed: ${inspect(object1)} === ${inspect(object2)}`);
 
-  } else{
+  } else {
     console.log(`Assertion Failed: ${inspect(object1)} !== ${inspect(object2)}`);
   }
 };

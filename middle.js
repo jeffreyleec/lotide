@@ -1,5 +1,3 @@
-
-
 const middle = function(arry) {
   let midNum = [];
   if (arry.length % 2 === 0) {

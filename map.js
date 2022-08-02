@@ -13,7 +13,7 @@ const map = function(array, callback) {
     results.push(callback(item));
   }
   return results;
-}
+};
 
 //const results1 = map(words, word => word[0]);
 
@@ -25,4 +25,4 @@ const map = function(array, callback) {
 
 // console.log(assertArraysEqual(results1, [ 'g', 'c', 't', 'm', 't' ]))
 
-module.exports = map
+module.exports = map;

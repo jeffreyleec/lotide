@@ -25,4 +25,4 @@ const letterPositions = function(word) {
 // assertArraysEqual(letterPositions(word).l, [2,3]); //l
 // assertArraysEqual(letterPositions(word).o, [4]); //o
 
-module.exports = letterPositions
+module.exports = letterPositions;
